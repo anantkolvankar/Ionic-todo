@@ -34,7 +34,7 @@ angular.module('starter', ['ionic'])
     };
     $scope.edit = function(task) {
       $scope.data = { response: task.title };
-      $ionicPopup.show({
+      $ionicPopup.prompt({
         title: "Edit Task",
         scope: $scope
       }).then(function(res) {    // promise 
